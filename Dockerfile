@@ -18,4 +18,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "main.py"]
+CMD ["python", "-c", "import offer_link_patch, runpy; runpy.run_path('main.py', run_name='__main__')"]
